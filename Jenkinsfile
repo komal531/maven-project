@@ -39,7 +39,7 @@ pipeline
         stage ('deploy the code on tomcat')
         {
             steps {
-                sshagent(['DEVCICD']) {
+                sshagent(['DEFCICD']) {
                     sh 'scp -o StrictHostKeyChecking=no webapp/target/webapp.war ec2-user@172.31.0.193:/usr/share/tomcat/webapps'
                 }
             }
