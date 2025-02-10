@@ -51,6 +51,8 @@ pipeline
 
 
 
+
+
 //sh 'scp -o StrictHostKeyChecking=no  '
 
 //sh 'scp -o StrictHostKeyChecking=no  <source file> <user name>@<ip of tomcat server>:<destination file>'
