@@ -32,7 +32,7 @@ pipeline {
     }
     stage('create docker image') {
       steps {
-        sh 'docker build -t e31531469/devops:latest .'
+        sh 'docker build -t komal31/devops:latest .'
       }
     }
     stage('push docker image to dockerhub') {
@@ -40,7 +40,7 @@ pipeline {
         
         withDockerRegistry(credentialsId: 'DockerHubCredentials', url: 'https://index.docker.io/v1/') {
             
-                sh 'docker push e31531469/devops:latest'
+                sh 'docker push komal31/devops:latest'
             
         }
       }
